@@ -1,0 +1,114 @@
+html,
+body {
+  text-align: center;
+}
+
+* {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+input {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  text-align: center;
+  box-shadow: 2px 2px gray;
+  border-radius: 5px;
+  max-width: 70px;
+}
+
+select {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  box-shadow: 2px 2px gray;
+  border-radius: 5px;
+}
+
+.game-board {
+  display: flex;
+  justify-content: center;
+  margin: 0 50px;
+}
+.game-board .taken {
+  border-radius: 50%;
+}
+
+.column {
+  width: 70px;
+}
+.column:hover {
+  cursor: pointer;
+}
+
+.cell {
+  padding: 30px;
+  border-radius: 50%;
+  margin: 10px;
+  background-size: cover;
+  background-position: center center;
+  border: 3px solid black;
+}
+.cell:first-of-type {
+  border: none;
+}
+.cell:hover {
+  border-color: black;
+}
+
+.message {
+  margin-top: 2rem;
+  font-size: 30px;
+  font-family: fantasy;
+}
+
+.button {
+  margin: 2rem;
+  border-radius: 10px;
+  min-width: 150px;
+  padding: 10px;
+  font-size: 20px;
+}
+.button:hover {
+  box-shadow: 2px 2px gray;
+  color: white;
+  cursor: pointer;
+}
+.button--reset:hover {
+  background-color: rgb(241, 99, 99);
+}
+.button--start:hover {
+  background-color: rgb(47, 161, 2);
+}
+.button--options:hover {
+  background-color: rgb(212, 19, 199);
+}
+
+.hidden {
+  display: none;
+}
+
+.game-options {
+  margin: auto;
+  max-width: 220px;
+}
+.game-options__field {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.disableClick {
+  pointer-events: none;
+}/*# sourceMappingURL=style.css.map */
