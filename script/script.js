@@ -157,12 +157,6 @@ const renderRowsAndColumns = (rows, columns) => {
   addGameBoardEventlisteners();
 };
 
-// const checkIfColumnIsFull = column => {
-//   return document
-//     .querySelector(`[data-column="${column}"] [data-cell="${rows - 1}"]`)
-//     .classList.contains('taken');
-// };
-
 const changePlayer = () => {
   if (currentPlayer === players[players.length - 1]) {
     currentPlayer = players[0];
